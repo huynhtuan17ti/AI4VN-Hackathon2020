@@ -14,19 +14,19 @@ There are 7 classes (not include class 0):
 + Class 7: traffic accident  
 
 # Our solution  
-We used EfficientNetB6 model as a final model.  
-Our data has up to 32000 images for 8 classes (include class 0).  
-We didn't use multiclass for this problem. Except that, we used multilabel, in order to predict class 0 efficiently.  
-To predict class 0, we used a threshold to do that. If the max probability of all classes (class 1 to 7) has lower than the threshold, we label it zero.  
-To find the fitness threshold, we tuned it by taking average of all best thresholds in evaluating 5 folds.  
-We had used test time augmentation in preliminary round. It helped us gain around 0.02 in the leaderboard. But in the final, because it take so much time to predict so we didn't used it.  
+- We used EfficientNetB6 model as a final model.  
+- Our data has up to 32000 images for 8 classes (include class 0).  
+- We didn't use multiclass for this problem. Except that, we used multilabel, in order to predict class 0 efficiently.  
+- To predict class 0, we used a threshold to do that. If the max probability of all classes (class 1 to 7) has lower than the threshold, we label it zero.  
+- To find the fitness threshold, we tuned it by taking average of all best thresholds in evaluating 5 folds.  
+- We had used test time augmentation in preliminary round. It helped us gain around 0.02 in the leaderboard. But in the final, because it take so much time to predict so we didn't used it.  
 
 # Result
-We got in top 20 in the preliminary round. 
+We got in top 20 in the preliminary round.  
 In the final we got 6th place.  
 
 # References
 More details about EfficientNet: https://arxiv.org/abs/1905.11946  
 More details about multilabel: https://en.wikipedia.org/wiki/Multi-label_classification  
-More details about k-fold cross-validation: https://machinelearningmastery.com/k-fold-cross-validation/
+More details about k-fold cross-validation: https://machinelearningmastery.com/k-fold-cross-validation/  
 More details about test time augmentation: https://machinelearningmastery.com/how-to-use-test-time-augmentation-to-improve-model-performance-for-image-classification/  
