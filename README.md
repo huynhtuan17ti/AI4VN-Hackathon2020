@@ -14,7 +14,7 @@ There are 7 classes (not include class 0):
 + Class 7: traffic accident  
 
 # Our solution  
-- We used EfficientNetB6 model as a final model.  
+- We used EfficientNetB6 model as a final soltution.  
 - Our data has up to 32000 images for 8 classes (include class 0).  
 - We didn't use multiclass for this problem. Except that, we used multilabel, in order to predict class 0 efficiently.  
 - To predict class 0, we used a threshold to do that. If the max probability of all classes (class 1 to 7) has lower than the threshold, we label it zero.  
