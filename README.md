@@ -22,8 +22,10 @@ There are 7 classes (not include class 0):
 - We had used test time augmentation in preliminary round. It helped us gain around 0.02 in the leaderboard. But in the final, because it take so much time to predict so we didn't used it.  
 
 # Result
-We got in top 20 in the preliminary round.  
-In the final we got 6th place.  
+#### We got in top 20 in the preliminary round.  
+![](images/preliminary_result.PNG)  
+#### In the final we got 6th place.  
+![](images/final_result.PNG)  
 
 # References
 More details about EfficientNet: https://arxiv.org/abs/1905.11946  
