@@ -16,7 +16,7 @@ There are 7 classes (not include class 0):
 # Our solution  
 - We used EfficientNetB6 model as a final solution.  
 - Our data has up to 32000 images for 8 classes (include class 0).  
-- We didn't use multiclass for this problem. Except that, we used multilabel, in order to predict class 0 efficiently.  
+- We didn't use multiclass for this problem. Instead, we used multilabel, in order to predict class 0 efficiently.  
 - To predict class 0, we used a threshold to do that. If the max probability of all classes (class 1 to 7) has lower than the threshold, we label it zero.  
 - To find the fitness threshold, we tuned it by taking average of all best thresholds in evaluating 5 folds.  
 - We had used test time augmentation in preliminary round. It helped us gain around 0.02 in the leaderboard. But in the final, because it take so much time to predict so we didn't used it.  
